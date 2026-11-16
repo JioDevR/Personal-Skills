@@ -1,6 +1,6 @@
 # Personal Skills
 
-Catálogo personal de las **skills** instaladas en mi entorno de desarrollo para agentes de IA (Antigravity / `.agents`), organizadas por pack de origen, repositorio oficial y función de cada una.
+Catálogo personal de **skills** para agentes de programación con IA (compatible con cualquier modelo o herramienta como Claude Code, Cursor, Gemini CLI, Codex, Copilot, OpenCode, entre otros), organizadas por pack de origen, repositorio oficial y función de cada una.
 
 ---
 
@@ -8,19 +8,17 @@ Catálogo personal de las **skills** instaladas en mi entorno de desarrollo para
 
 | Pack / Fuente | Tipo | Repositorio Oficial | Skills incluidas |
 | :--- | :--- | :--- | :---: |
-| **emilkowalski/skills** | Pack (GitHub) | [github.com/emilkowalski/skills](https://github.com/emilkowalski/skills) | 14 activas (+3 en disco) |
-| **superpowers (v7.0.1)** | Plugin | [github.com/obra/superpowers](https://github.com/obra/superpowers) | 15 |
+| **emilkowalski/skills** | Pack (GitHub) | [github.com/emilkowalski/skills](https://github.com/emilkowalski/skills) | 17 |
+| **superpowers (v7.0.1)** | Pack / Plugin | [github.com/obra/superpowers](https://github.com/obra/superpowers) | 15 |
 | **impeccable (v4.8.0)** | Skill / Pack de diseño | [github.com/pbakaus/impeccable](https://github.com/pbakaus/impeccable) | 1 |
 | **markitdown** | Skill individual | [github.com/microsoft/markitdown](https://github.com/microsoft/markitdown) | 1 |
 | **playwright** | Skill individual | [github.com/microsoft/playwright](https://github.com/microsoft/playwright) | 1 |
-| **Antigravity Built-in** | Integradas | Integradas en Antigravity CLI | 2 activas (+4 en disco) |
 
 ---
 
 ## 1. Pack `emilkowalski/skills`
 
 * **Repositorio oficial:** [https://github.com/emilkowalski/skills](https://github.com/emilkowalski/skills)
-* **Ubicación local:** `~/.agents/skills/`
 
 | Skill | Función |
 | :--- | :--- |
@@ -36,17 +34,17 @@ Catálogo personal de las **skills** instaladas en mi entorno de desarrollo para
 | `find-animation-opportunities` | Auditoría de solo lectura para detectar partes de una UI que deberían animarse y descartar las que no. |
 | `improve-animations` | Auditoría priorizada y planes de mejora para código de animaciones existente en un proyecto. |
 | `mobile-native` | Pequeños ajustes CSS y meta-tags para que una web móvil se sienta como una app nativa (tap highlights, `100vh`, notch, etc.). |
+| `pick-ui-library` | Criterios para evaluar y elegir librerías de componentes UI según accesibilidad, personalización y requisitos del proyecto. |
+| `prototype` | Creación rápida de prototipos interactivos de interfaz para validar flujos y sensaciones antes de pasar a producción. |
 | `remove-animations` | Detectar y eliminar animaciones innecesarias o que hacen lenta la interfaz, limpiando el código residual. |
+| `review-animations` | Revisar y criticar animaciones existentes (curvas, duración, propósito, interrupciones y rendimiento). |
 | `write-swift` | Buenas prácticas de Swift moderno (tipos por valor, concurrencia en Swift 6, protocolos, rendimiento, ARC y Swift Testing). |
-
-> **Nota:** En disco (`~/.agents/skills/`) también están instaladas dentro de este pack `pick-ui-library`, `prototype` y `review-animations`.
 
 ---
 
-## 2. Plugin `superpowers` (v7.0.1)
+## 2. Pack `superpowers` (v7.0.1)
 
 * **Repositorio oficial:** [https://github.com/obra/superpowers](https://github.com/obra/superpowers)
-* **Ubicación local:** `~/.gemini/config/plugins/superpowers/skills/`
 
 | Skill | Función |
 | :--- | :--- |
@@ -72,28 +70,12 @@ Catálogo personal de las **skills** instaladas en mi entorno de desarrollo para
 
 ### `impeccable` (v4.8.0)
 * **Repositorio oficial:** [https://github.com/pbakaus/impeccable](https://github.com/pbakaus/impeccable)
-* **Ubicación local:** `~/.agents/skills/impeccable/`
 * **Función:** Sistema de diseño y crítica frontend para diseñar, rediseñar, auditar, pulir, simplificar y endurecer interfaces web y móviles (UX, jerarquía, tipografía, color, accesibilidad, *design systems* y `DESIGN.md`).
 
 ### `markitdown`
 * **Repositorio oficial de la herramienta:** [https://github.com/microsoft/markitdown](https://github.com/microsoft/markitdown)
-* **Ubicación local:** `~/.gemini/config/skills/markitdown/` (enlazada en `~/.agents/skills/markitdown`)
 * **Función:** Convertir documentos de oficina (PDF, DOCX, PPTX, XLSX), multimedia, HTML o archivos comprimidos a Markdown limpio para ingesta en LLMs, análisis de texto y pipelines RAG.
 
 ### `playwright`
 * **Repositorio oficial de la herramienta:** [https://github.com/microsoft/playwright](https://github.com/microsoft/playwright)
-* **Ubicación local:** `~/.gemini/config/skills/playwright/` (enlazada en `~/.agents/skills/playwright`)
 * **Función:** Automatización de navegador, inspección visual de páginas locales o en vivo, capturas de pantalla y creación/ejecución de pruebas E2E con Playwright.
-
----
-
-## 4. Built-in de Antigravity
-
-* **Ubicación local:** `~/.gemini/antigravity-cli/builtin/skills/`
-
-| Skill | Función |
-| :--- | :--- |
-| `agy-customizations` | Guía del sistema de personalización de Antigravity (skills, reglas, plugins, hooks y servidores MCP). |
-| `antigravity_guide` | Guía completa y referencia rápida de Google Antigravity (CLI `agy`, IDE, SDK de Python, comandos y atajos). |
-
-> **Nota:** En el directorio built-in también se encuentran `automation`, `generative_ui`, `migrate-workflows` y `permissioned-github`.
